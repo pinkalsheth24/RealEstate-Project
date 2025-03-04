@@ -77,7 +77,9 @@ include("config.php");
        
     </div>
 </div>
-
+<!--	Footer   start-->
+<?php include("include/footer.php");?>
+		<!--	Footer   start-->
 
 </body>
 
