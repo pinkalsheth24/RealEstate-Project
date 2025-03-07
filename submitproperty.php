@@ -132,8 +132,14 @@ if(isset($_POST['add']))
                         <form method="post" enctype="multipart/form-data">
 								<div class="description">
 									<h5 class="text-secondary">Property Details</h5><hr>
-									 <?php echo $error; ?>  
-									<?php echo $msg; ?>
+                                    <?php
+$error = ""; // Initialize $error as an empty string
+$msg = "";   // Initialize $msg as an empty string
+
+// Your existing code...
+
+?>
+
 									
 										<div class="row">
 											<div class="col-xl-12">
