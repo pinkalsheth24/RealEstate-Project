@@ -18,6 +18,7 @@ if(isset($_REQUEST['login']))
 			   
 				$_SESSION['uid']=$row['uid'];
 				$_SESSION['uemail']=$email;
+				$_SESSION['utype']=$row['utype'];
 				header("location:index.php");
 				
 		   }
@@ -102,6 +103,8 @@ if(isset($_REQUEST['login']))
             </div>
         </div>
 </div>
-
+<!--	Footer   start-->
+<?php include("include/footer.php");?>
+		<!--	Footer   start-->
 </body>
 </html>

@@ -8,7 +8,7 @@ if(!isset($_SESSION['uemail']))
 	header("location:login.php");
 }
 
-
+////// code
 $error='';
 $msg='';
 if(isset($_POST['insert']))
@@ -40,20 +40,22 @@ if(isset($_POST['insert']))
 <html lang="en">
 
 <head>
-
+<!-- Required meta tags -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+<!-- Meta Tags -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="shortcut icon" href="images/favicon.ico">
 
-
+<!--	Fonts
+	========================================================-->
 <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 
-
+<!--	Css Link
+	========================================================-->
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.css">
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
@@ -61,11 +63,12 @@ if(isset($_POST['insert']))
 <link rel="stylesheet" type="text/css" href="css/color.css">
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-
+<link rel="stylesheet" type="text/css" href="fonts/flaticon/flaticon.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
-
+<!--	Title
+	=========================================================-->
 <title>Real Estate PHP</title>
 </head>
 <body>
@@ -78,28 +81,8 @@ if(isset($_POST['insert']))
 		<?php include("include/header.php");?>
         <!--	Header end  -->
         
-        <!--	Banner   --->
-        <div class="banner-full-row page-banner" style="background-image:url('images/breadcromb.jpg');">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="page-name float-left text-white text-uppercase mt-1 mb-0"><b>Profile</b></h2>
-                    </div>
-                    <div class="col-md-6">
-                        <nav aria-label="breadcrumb" class="float-left float-md-right">
-                            <ol class="breadcrumb bg-transparent m-0 p-0">
-                                <li class="breadcrumb-item text-white"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item active">Profile</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
-		 
-		 
-		<!--	Submit property   -->
+        
+	
         <div class="full-row">
             <div class="container">
                     <div class="row">
@@ -150,6 +133,10 @@ if(isset($_POST['insert']))
 										<div class="mb-1 text-capitalize"><b>Role:</b> <?php echo $row['5'];?></div>
                                     </div>
 									<?php } ?>
+                                    <div class="text-center mt-4">
+                                        <a href="update_profile.php" class="btn btn-primary">Update Profile</a>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -157,7 +144,14 @@ if(isset($_POST['insert']))
                 </div>            
             </div>
         </div>
-	
 
+        
+        
+    </div>
+</div>
+
+        <!--	Footer   start-->
+		<?php include("include/footer.php");?>
+		<!--	Footer   start-->
 </body>
 </html>

@@ -71,24 +71,24 @@ if (isset($_POST['send'])) {
                                     <i class="bi bi-geo-alt text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Address</h5>
-                                        <span class="text-white">Shastri Nagar near by BOB,Awaja Road</span> <br>
-                                        <span class="text-white">Vadodara</span>
+                                        <span class="text-white">139, New Cloth Market, O/s Raipur Gate, Ahmedabad, Gujarat 380002</span> <br>
+                                        <!-- <span class="text-white">Vadodara</span> -->
                                     </div>
                                 </li>
                                 <li class="d-flex mb-4"> 
                                     <i class="bi bi-telephone text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Call Us</h5>
-                                        <span class="d-table text-white">9313625782</span>
-                                        <span class="text-white">9979334499</span>
+                                        <span class="d-table text-white">+91 9313625782</span>
+                                        <span class="text-white">+91 9979334499</span>
                                     </div>
                                 </li>
                                 <li class="d-flex mb-4"> 
                                     <i class="bi bi-envelope text-white mr-2 font-13 mt-1"></i>
                                     <div class="contact-address">
                                         <h5 class="text-white">Email Address</h5>
-                                        <span class="d-table text-white">@realeest001.com</span>
-                                        <span class="text-white">@easted024.com</span>
+                                        <span class="d-table text-white">contact@realestate.com</span>
+                                        <!-- <span class="text-white">@easted024.com</span> -->
                                     </div>
                                 </li>
                             </ul>
@@ -122,7 +122,7 @@ if (isset($_POST['send'])) {
                                                 </div>
                                                 <div class="col-lg-12">
                                                     <div class="form-group">
-                                                        <textarea name="message" class="form-control" rows="5" placeholder="Type Comments..."></textarea>
+                                                        <textarea name="message" class="form-control" rows="5" placeholder="Write Your Query"></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -139,7 +139,9 @@ if (isset($_POST['send'])) {
     </div>
 </div>
 
-
+<!--	Footer   start-->
+<?php include("include/footer.php");?>
+		<!--	Footer   start-->
 
 </body>
 </html>

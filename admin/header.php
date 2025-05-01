@@ -1,7 +1,6 @@
 <?php
-session_start();
 require("config.php");
-////code
+
  
 if(!isset($_SESSION['auser']))
 {
@@ -13,7 +12,7 @@ if(!isset($_SESSION['auser']))
 				<!-- Logo -->
                 <div class="header-left">
                     <a href="dashboard.php" class="logo">
-						<img src="assets/img/rsadmin.png" alt="Logo">
+						<img src="assets/img/logo-small.png" alt="Logo">
 					</a>
 					<a href="dashboard.php" class="logo logo-small">
 						<img src="assets/img/logo-small.png" alt="Logo" width="30" height="30">
@@ -21,9 +20,7 @@ if(!isset($_SESSION['auser']))
                 </div>
 			
 				
-				<a href="javascript:void(0);" id="toggle_btn">
-					<i class="fe fe-text-align-left"></i>
-				</a>
+				
 				
 
 				
@@ -37,7 +34,7 @@ if(!isset($_SESSION['auser']))
 				<ul class="nav user-menu">
 
 					
-				<?php echo $_SESSION['auser'];?>
+				
 					<li class="nav-item dropdown app-dropdown">
 						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
 							<span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar.png" width="31" alt="Ryan Taylor"></span>
@@ -84,15 +81,16 @@ if(!isset($_SESSION['auser']))
 							<li class="submenu">
 								<a href="#"><i class="fe fe-user"></i> <span> All Users </span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
-									<li><a href="adminlist.php"> Admin </a></li>
-									<li><a href="userlist.php"> Users </a></li>
+									<!-- <li><a href="adminlist.php"> Admin </a></li> -->
+									<li><a href="userviewlist.php"> Users </a></li>
 									<li><a href="useragent.php"> Agent </a></li>
-									<li><a href="userbuilder.php"> Builder </a></li>
+									
 								</ul>
 							</li>
 							<li class="menu-title"> 
 								<span>Property Mangement</span>
 							</li>
+							
 
 							<li class="submenu">
 								<a href="#"><i class="fe fe-map"></i> <span> Property</span> <span class="menu-arrow"></span></a>
@@ -100,6 +98,17 @@ if(!isset($_SESSION['auser']))
 									<li><a href="propertyadd.php"> Add Property</a></li>
 									<li><a href="propertyview.php"> View Property </a></li>
 									
+								</ul>
+							</li>
+									
+							<li class="menu-title"> 
+								<span>Query</span>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-comment"></i> <span> Contact,Feedback </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="contactview.php"> Contact </a></li>
+									<li><a href="feedbackview.php"> Feedback </a></li>
 								</ul>
 							</li>
 							
@@ -121,4 +130,5 @@ if(!isset($_SESSION['auser']))
 					</div>
                 </div>
             </div>
+			<div class="mb-5"></div>
 		

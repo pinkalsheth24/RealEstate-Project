@@ -110,7 +110,9 @@ if(isset($_REQUEST['calc']))
         </div>
     </div>
 </div>
-
+<!--	Footer   start-->
+<?php include("include/footer.php");?>
+		<!--	Footer   start-->
 
 </body>
 </html>

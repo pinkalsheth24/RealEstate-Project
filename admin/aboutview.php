@@ -61,6 +61,7 @@ if (!isset($_SESSION['auser'])) {
                                             <th>Title</th>
                                             <th>Content</th>
                                             <th>Image</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -68,14 +69,29 @@ if (!isset($_SESSION['auser'])) {
                                         $query = mysqli_query($con, "SELECT * FROM about");
                                         $cnt = 1;
                                         while ($row = mysqli_fetch_row($query)) {
-                                    ?>
-                                        <tr>
-                                            <td><?php echo $cnt; ?></td>
-                                            <td><?php echo $row[1]; ?></td>
-                                            <td><?php echo $row[2]; ?></td>
-                                            <td><img src="upload/<?php echo $row[3]; ?>" height="200px" width="200px"></td>
-                                        </tr>
-                                    <?php
+                                            ?>
+                                    <tr>
+                                    <td><?php echo $cnt; ?></td>
+                                    <td><?php echo $row[1]; ?></td>
+                                    <td><?php echo $row[2]; ?></td>
+                                    <td><img src="upload/<?php echo $row['3']; ?>" height="200px" width="200px"></td>
+                                    <td>
+                                        <a href="aboutedit.php?id=<?php echo $row['0']; ?>">
+                                            <button class="btn btn-info mb-2">Edit</button>
+                                        </a><br>
+                                       
+                                        <a class="btn btn-danger btn-sm" 
+														href="aboutdelete.php?id=<?php echo $row['0']; ?>" 
+														onclick="return confirm('Are you sure you want to delete this property?');">
+														Delete
+													</a>
+                                    </td>
+                                    </tr>
+
+                                    <td>
+													
+
+                                            <?php
                                             $cnt++;
                                         } 
                                     ?>

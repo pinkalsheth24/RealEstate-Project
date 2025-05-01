@@ -107,14 +107,20 @@ if(!isset($_SESSION['auser']))
                                                     <td><?php echo $row['4']; ?></td>
                                                     <td><?php echo $row['5']; ?></td>
                                                    
+                                                    <td><?php echo $row['15']; ?></td>
+                                                    <td><?php echo $row['25']; ?></td>
                                                     <td><?php echo $row['12']; ?></td>
-                                                    <td><?php echo $row['9']; ?></td>
-                                                    <td><?php echo $row['10']; ?></td>
 													
                                                    
                                                 
-													<td>
-                                                    <a href="propretydelete.php?id=<?php echo $row['0'];?>"><button class="btn btn-danger">Delete</button></a></td>
+													
+                                                    <td>
+													<a class="btn btn-danger btn-sm" 
+														href="propretydelete.php?id=<?php echo $row['0']; ?>" 
+														onclick="return confirm('Are you sure you want to delete this property?');">
+														Delete
+													</a>
+													</td>  
                                                 </tr>
                                                <?php
 												} 
